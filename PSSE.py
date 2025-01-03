@@ -1,18 +1,17 @@
 import os,sys
 import psse35
 import psspy
-import numpy as np
 import math
-import openpyxl
+from library import openpyxl
 from psspy import _i,_f,_s
 from openpyxl import load_workbook
 file_path=r"C:\Users\Thien Dang\Desktop\ins\training\training\13_Water_Spring_Solar\Water_Spring_Solar.xlsm"
 case_path=r"C:\Users\Thien Dang\Desktop\ins\code\test.sav"
-sys_path_PSSE=r'C:\Program Files\PTI\PSSE35\35.3\PSSPY27'
-sys.path.append(sys_path_PSSE)
-os_path_PSSE=r'C:\Program Files\PTI\PSSE35\35.3\PSSBIN'
-os.environ['PATH']+=";"+os_path_PSSE
-os.environ['PATH']+=";"+sys_path_PSSE
+# sys_path_PSSE=r'C:\Program Files\PTI\PSSE35\35.3\PSSPY27'
+# sys.path.append(sys_path_PSSE)
+# os_path_PSSE=r'C:\Program Files\PTI\PSSE35\35.3\PSSBIN'
+# os.environ['PATH']+=";"+os_path_PSSE
+# os.environ['PATH']+=";"+sys_path_PSSE
 
 ierr=psspy.psseinit(50)
 ierr=psspy.newcase_2(basemva=100, basefreq=50)

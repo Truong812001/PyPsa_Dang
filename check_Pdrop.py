@@ -1,7 +1,7 @@
 import os
 import psse35
 import dyntools
-import pandas as pd
+from library import pandas as pd
 
 def checker(file, name_file, result,bus):
     chnf = dyntools.CHNF(file)
